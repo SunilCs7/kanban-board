@@ -1,0 +1,136 @@
+/* index.css */
+/* CSS Reset */
+* {
+  color: black;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.App {
+  max-width: 100vw;
+  padding: 20px;
+  background-color: #eaeaea;
+}
+
+.display-menu {
+  margin-bottom: 20px;
+}
+
+.kanban-board {
+  display: flex;
+  justify-content: space-between;
+}
+
+.kanban-column {
+  background: #ffffff;
+  padding: 8px;
+  margin-right: 10px;
+  border-radius: 5px;
+  flex-grow: 1;
+}
+
+/* For DisplayMenu.js */
+.display-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-button,
+.dropdown-toggle {
+  background-color: #d0d0d0;
+  padding: 8px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 5px;
+  position: relative;
+  border-radius: 2px;
+}
+
+/* change required */
+.grouping,
+.ordering {
+  position: relative;
+  font-size: 14px;
+}
+
+.groupingItems,
+.orderingItems {
+  color: black;
+}
+
+.dropdown-content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
+  padding: 8px;
+  z-index: 1;
+  border-radius: 2px;
+}
+
+.dropdown-item {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.nested-dropdown {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: fit-content;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
+  padding: 8px;
+  z-index: 1;
+}
+
+.nested-dropdown button {
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.nested-dropdown button:hover {
+  background-color: #ddd;
+}
+
+/* TicketCard */
+.headingCard {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+.headingLeft,
+.headingRight {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+}
+
+.heading {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.headingCard .headingIcon {
+  width: 20px;
+  height: 20px;
+  color: black;
+  transform: scale(1);
+}
+.headingCard .headingIcon:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
